@@ -65,7 +65,75 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\css\animat\animate.min.css" />
+    <Content Include="App_Data\css\bootstrap\bootstrap.min.css" />
+    <Content Include="App_Data\css\fancybox\jquery.fancybox.css" />
+    <Content Include="App_Data\css\font-awesome\css\font-awesome.css" />
+    <Content Include="App_Data\css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="App_Data\css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Data\css\fonts\._glyphicons-halflings-regular.svg" />
+    <Content Include="App_Data\css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="App_Data\css\nivo-lightbox\nivo-lightbox.css" />
+    <Content Include="App_Data\css\owl-carousel\owl.carousel.css" />
+    <Content Include="App_Data\css\owl-carousel\owl.theme.css" />
+    <Content Include="App_Data\css\owl-carousel\owl.transitions.css" />
+    <Content Include="App_Data\css\responsive.css" />
+    <Content Include="App_Data\css\style.css" />
+    <Content Include="App_Data\css\themes\default\close%402x.png" />
+    <Content Include="App_Data\css\themes\default\close.png" />
+    <Content Include="App_Data\css\themes\default\default.css" />
+    <Content Include="App_Data\css\themes\default\loading%402x.gif" />
+    <Content Include="App_Data\css\themes\default\loading.gif" />
+    <Content Include="App_Data\css\themes\default\next%402x.png" />
+    <Content Include="App_Data\css\themes\default\next.png" />
+    <Content Include="App_Data\css\themes\default\prev%402x.png" />
+    <Content Include="App_Data\css\themes\default\prev.png" />
+    <Content Include="App_Data\images\._scroll.gif" />
+    <Content Include="App_Data\images\abimg.png" />
+    <Content Include="App_Data\images\bannerbg.jpg" />
+    <Content Include="App_Data\images\footerbg.jpg" />
+    <Content Include="App_Data\images\icon1.png" />
+    <Content Include="App_Data\images\p2.jpg" />
+    <Content Include="App_Data\images\p3.jpg" />
+    <Content Include="App_Data\images\p4.jpg" />
+    <Content Include="App_Data\images\p5.jpg" />
+    <Content Include="App_Data\images\p6.jpg" />
+    <Content Include="App_Data\images\preloading.gif" />
+    <Content Include="App_Data\images\s1.png" />
+    <Content Include="App_Data\images\scroll.gif" />
+    <Content Include="App_Data\images\signature.png" />
+    <Content Include="App_Data\images\spr.png" />
+    <Content Include="App_Data\js\bootstrap\bootstrap.min.js" />
+    <Content Include="App_Data\js\fancybox\jquery.fancybox.pack.js" />
+    <Content Include="App_Data\js\jquery-easing\human-user-account-profile-128.png" />
+    <Content Include="App_Data\js\jquery-easing\jquery.easing.1.3.js" />
+    <Content Include="App_Data\js\jquery-easing\profile2-128.png" />
+    <Content Include="App_Data\js\jquery-easing\user-128.png" />
+    <Content Include="App_Data\js\jquery-easing\user_male2-128.png" />
+    <Content Include="App_Data\js\jquery\jquery.js" />
+    <Content Include="App_Data\js\nivo-lightbox\nivo-lightbox.min.js" />
+    <Content Include="App_Data\js\owl-carousel\owl.carousel.min.js" />
+    <Content Include="App_Data\js\script.js" />
+    <Content Include="App_Data\js\wow\._wow.min.js" />
+    <Content Include="App_Data\js\wow\wow.min.js" />
+    <Content Include="css.css" />
     <Content Include="packages.config" />
+    <Content Include="App_Data\css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="App_Data\css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="App_Data\css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="App_Data\css\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="App_Data\css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="App_Data\css\fonts\._glyphicons-halflings-regular.eot" />
+    <Content Include="App_Data\css\fonts\._glyphicons-halflings-regular.ttf" />
+    <Content Include="App_Data\css\fonts\._glyphicons-halflings-regular.woff" />
+    <Content Include="App_Data\css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="App_Data\css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="App_Data\css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="App_Data\css\fonts\Merriweather-Bold.ttf" />
+    <Content Include="App_Data\css\fonts\Merriweather-Light.ttf" />
+    <Content Include="App_Data\css\fonts\Merriweather-LightItalic.ttf" />
+    <Content Include="App_Data\css\fonts\Merriweather-Regular.ttf" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -76,7 +144,9 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Order.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -92,7 +162,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

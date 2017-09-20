@@ -2,12 +2,13 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<html >
+   
+    
+<body style="background-color:yellow; align-content:center">
+    <div style="margin-left:200px">
+    <form id="form1"   style="align-items:center" runat="server">
+        <h1>Order Food </h1>
         <div>
             <table  >  
                 <tr>  
@@ -84,11 +85,12 @@
                   
                 <tr>  
                     <td>  
-                        <asp:Button ID="Button1" runat="server" Text="Button" />  
+                        <asp:Button ID="Button1" runat="server" Text="Order " />  
                     </td>  
                 </tr>  
             </table>  
         </div>
     </form>
+        </div>
 </body>
 </html>
