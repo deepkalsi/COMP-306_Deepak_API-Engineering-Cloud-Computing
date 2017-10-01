@@ -2,47 +2,66 @@
 
 <!DOCTYPE html>
 
-<html >
-   
-    
-<body style="background-color:yellow; align-content:center">
+<html>
+    <head>
+        <title>Restaurant </title>
+	<link rel="stylesheet" href="~css/font-awesome/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="~css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="~css/animat/animate.min.css" />
+	<link rel="stylesheet" href="~css/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="~css/nivo-lightbox/nivo-lightbox.css" />
+	<link rel="stylesheet" href="~css/themes/default/default.css" />
+	<link rel="stylesheet" href="~css/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="~css/owl-carousel/owl.theme.css" />
+	<link rel="stylesheet" href="~css/owl-carousel/owl.transitions.css">
+	
+	<link rel="stylesheet" href="~css/style.css" />
+	<link rel="stylesheet" href="~css/responsive.css" />
+        <style type="text/css">
+            .auto-style1 {
+                width: 185px;
+            }
+        </style>
+    </head>
+<body>
     <div style="margin-left:200px">
     <form id="form1"   style="align-items:center" runat="server">
         <h1>Order Food </h1>
         <div>
             <table  >  
                 <tr>  
-                    <td>First Name :</td>  
+                    <td class="auto-style1">First Name :</td>  
                     <td>  
                         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>  
                     </td>  
   
                </tr>  
                 <tr>  
-                    <td>Last Name :</td>  
+                    <td class="auto-style1">Last Name :</td>  
                      <td> <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>  
                 </tr>  
                 <tr>  
-                    <td>City</td>  
+                    <td class="auto-style1">City</td>  
                     <td>  
                         <asp:TextBox ID="TextBox3" runat="server" ></asp:TextBox>  
                     </td>  
                 </tr>  
                 <tr>  
-                    <td>Postal Code</td>  
+                    <td class="auto-style1">Postal Code</td>  
                     <td>  
                         <asp:TextBox ID="TextBox4" runat="server" ></asp:TextBox>  
                     </td> 
                 </tr>
 
                 <tr>  
-                    <td>Phone Number</td>  
+                    <td class="auto-style1">Phone Number</td>  
                     <td>  
                         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>  
                     </td>  
                 </tr>
                 <tr>
-                    <td>Province</td>
+                    <td class="auto-style1">Province</td>
                     <td>
                         <asp:DropDownList ID="DropDownList1" runat="server">
                             <asp:ListItem>ONTARIO</asp:ListItem>
@@ -53,7 +72,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Food and Drinks</td>
+                    <td class="auto-style1">Food and Drinks</td>
                     <td>
                         <asp:CheckBoxList ID="CheckboxList1" runat="server">
                             <asp:ListItem>Pizza</asp:ListItem>
@@ -68,7 +87,7 @@
                     </td>
                 </tr>
                 <tr>  
-                    <td>Pickup or Delivery</td>  
+                    <td class="auto-style1">Pickup or Delivery</td>  
                     <td>  
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server">  
                             <asp:ListItem>Pick up</asp:ListItem>  
@@ -77,17 +96,26 @@
                     </td>  
                </tr>
                 <tr>
-                    <td>Comment</td>
+                    <td class="auto-style1">Comment</td>
                     <td> 
                      <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                   
                 <tr>  
-                    <td>  
-                        <asp:Button ID="Button1" runat="server" Text="Order " />  
+                    <td class="auto-style1">  
+                        <asp:Button ID="Button1" runat="server" Text="Order " OnClick="Button1_Click" />  
                     </td>  
                 </tr>  
+                <tr>
+                    <td class="auto-style1">Comment</td>
+                    <td> 
+                     <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:orderinfoConnectionString %>" SelectCommand="SELECT [Id], [fname], [lname], [city], [postal], [phno] FROM [order]"></asp:SqlDataSource>
+                
+                
             </table>  
         </div>
     </form>
