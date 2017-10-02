@@ -25,59 +25,65 @@ namespace Restaurant
             string city = TextBox3.Text;
             string postal = TextBox4.Text;
             string phNo = TextBox5.Text;
-            int Id = 2;
+            
 
             string connString = ConfigurationManager.ConnectionStrings["orderinfoConnectionString"].ConnectionString;
 
                 SqlConnection conn = null;
-                try
+            try
             {
-                
-                conn = new SqlConnection(connString);
-                    conn.Open();
 
-                    using (SqlCommand cmd = new SqlCommand())
+                conn = new SqlConnection(connString);
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand())
                 {
-                   
+
                     cmd.Connection = conn;
-                        cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "INSERT INTO order(Id,fname,lname,city,postal,phno) Values (@Id,@fname,@lname,@city,@postal,@phno)";
+                    cmd.CommandType = CommandType.Text;
+                    //cmd.CommandText = "INSERT INTO cloud(fname,lname,city,postal,phno) Values (@fname,@lname,@city,@postal,@phno)";
+                    cmd.CommandText = "Insert Into cloud(fname,lname) Values(@fname,@lname)";
                    
-                    cmd.Parameters.AddWithValue("@Id", 1);
-                        cmd.Parameters.AddWithValue("@fname", fname);
-                        cmd.Parameters.AddWithValue("@lname", lname);
-                        cmd.Parameters.AddWithValue("@city", city);
-                    cmd.Parameters.AddWithValue("@postal", postal);
-                    cmd.Parameters.AddWithValue("@phno", phNo);
+                    cmd.Parameters.AddWithValue("@fname", fname);
+                    cmd.Parameters.AddWithValue("@lname", lname);
+                   // cmd.Parameters.AddWithValue("@city", city);
+                    //cmd.Parameters.AddWithValue("@postal", postal);
+                    //cmd.Parameters.AddWithValue("@mobile", phNo);
+                    //cmd.Parameters.AddWithValue("@province", phNo);
+                    //cmd.Parameters.AddWithValue("@oitems", phNo);
+                    //cmd.Parameters.AddWithValue("@pikdiv", phNo);
+                    //cmd.Parameters.AddWithValue("@comment", phNo);
+                    
                     int rowsAffected = cmd.ExecuteNonQuery();
-                    TextBox7.Text = "in  command3";
+
                     if (rowsAffected == 1)
-                        {
+                    {
                         //Success notification
-                       
+
                         TextBox7.Text = "done";
-                        }
-                        else
-                        {
+                    }
+                    else
+                    {
                         //Error notification
-                       
+
                         TextBox7.Text = "error";
                     }
                 }
-                    
-                }
-                catch (Exception ex)
+
+            }
+            catch (SqlException ex)
+            {
+                //log error 
+                //display friendly error to user
+                TextBox7.Text = ex.Message;
+            }
+            finally
+            {
+                if (conn != null)
                 {
-                    //log error 
-                    //display friendly error to user
+                    //cleanup connection i.e close 
                 }
-                finally
-                {
-                    if (conn != null)
-                    {
-                        //cleanup connection i.e close 
-                    }
-                }
+            }
             }
         
     }

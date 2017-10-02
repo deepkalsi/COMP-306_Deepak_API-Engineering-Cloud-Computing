@@ -6,7 +6,7 @@
     <head>
         <title>Restaurant </title>
 	<link rel="stylesheet" href="~css/font-awesome/css/font-awesome.min.css" />
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'/>
 	<link rel="stylesheet" href="~css/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" href="~css/animat/animate.min.css" />
 	<link rel="stylesheet" href="~css/fancybox/jquery.fancybox.css" />
