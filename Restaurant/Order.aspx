@@ -5,26 +5,26 @@
 <html>
     <head>
         <title>Restaurant </title>
-	<link rel="stylesheet" href="~css/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'/>
-	<link rel="stylesheet" href="~css/bootstrap/bootstrap.min.css" />
-	<link rel="stylesheet" href="~css/animat/animate.min.css" />
-	<link rel="stylesheet" href="~css/fancybox/jquery.fancybox.css" />
-	<link rel="stylesheet" href="~css/nivo-lightbox/nivo-lightbox.css" />
-	<link rel="stylesheet" href="~css/themes/default/default.css" />
-	<link rel="stylesheet" href="~css/owl-carousel/owl.carousel.css" />
-	<link rel="stylesheet" href="~css/owl-carousel/owl.theme.css" />
-	<link rel="stylesheet" href="~css/owl-carousel/owl.transitions.css">
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="animate.min.css" />
+	<link rel="stylesheet" href="jquery.fancybox.css" />
+	<link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css" />
+	<link rel="stylesheet" href="css/themes/default/default.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="owl.theme.css" />
+	<link rel="stylesheet" href="owl.transitions.css">
 	
-	<link rel="stylesheet" href="~css/style.css" />
-	<link rel="stylesheet" href="~css/responsive.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="responsive.css" />
         <style type="text/css">
             .auto-style1 {
                 width: 185px;
             }
         </style>
     </head>
-<body>
+    <body>
     <div style="margin-left:200px">
     <form id="form1"   style="align-items:center" runat="server">
         <h1>Order Food </h1>
@@ -120,5 +120,6 @@
         </div>
     </form>
         </div>
-</body>
+        </body>
+
 </html>
